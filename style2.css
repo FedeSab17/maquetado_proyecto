@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300;1,400&display=swap');
+
+*{
+
+    /* Estilos Generales */
+    margin: 0px; /* margen externo */
+    padding: 0px; /* Interno */
+    box-sizing: border-box; /* permite que las cajas no se solapen*/
+
+}
+
+
+body{
+
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.boton{
+
+    height: 50px;
+    width: 50px;
+
+}
+
+.grid{
+
+    height: 100vh;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 3fr 3fr 1fr;
+    margin: 15px 15px
+
+
+}
+
+.box{
+
+    background: darkgreen;
+    padding: 10px;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+.slider{
+
+    background-image: url("/imagenes/portada.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.titulo{
+
+    grid-column: 1/3;
+
+}
+
+.portada{
+
+    grid-column: 1/3;
+
+}
+
+.navegacion{
+
+    grid-column: 1/3;
+    grid-gap:unset;
+   
+
+}
+
+.acerca{
+
+    grid-column: 1/3;
+
+}
+
+.footer{
+
+    grid-column: 1/3;
+    margin-bottom: 12px;
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+
+    .grid{
+
+        height: 100vh;
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr 2fr 3fr 3fr 3fr 1fr;
+        margin: 15px 15px
+    
+    
+    }
+    
+    .experiencia{
+
+        grid-column: 1/3;
+
+    }
+
+    .educacion{
+
+        grid-column: 1/3;
+
+    }
+
+    .skill{
+
+        grid-column: 1/3;
+
+    }
+
+    .proyectos{
+
+        grid-column: 1/3;
+
+    }
+
+}
